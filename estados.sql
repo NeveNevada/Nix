@@ -40,7 +40,7 @@ VALUES
 
 -- Codigos
 
-SELECT * FROM `estados`
+SELECT * FROM estados
 
 SELECT nome AS 'Nome do Estado', sigla UF, regiao Região FROM `estados`;
 
