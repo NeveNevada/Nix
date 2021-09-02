@@ -10,6 +10,14 @@ VALUES
     ('Fortaleza', '6', 313.8),
     ('Rio de Janeio', '19', 1.255),
     ('Presidente Prudente', '25', 562.794),
-    ('Colatina', '8', 1.417);
+    ('Colatina', '8', 1.417).
+    ('Rolandia')
 
- SELECT * FROM cidades
+SELECT * FROM cidades
+
+INSERT INTO 'cidades' (nome, area, estado_id)
+VALUES (
+    'Ibiporã'
+    300.1,
+    (select id_estado from estados where nome = 'Paraná')
+)
